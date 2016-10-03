@@ -18,7 +18,11 @@ public class BasicConcepts {
         System.out.println(newNumber);
         System.out.println(tobeornottobe);
 
-        
+
+        double newNum = 4.9;
+        Integer numofSalalds =7;
+
+
 
 
 }
