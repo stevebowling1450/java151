@@ -33,7 +33,7 @@ public class UserInput {
         fFact = fact.nextLine();
 
 
-        System.out.println("Thank You " + name + "You are from "+ bCity + "You are "+ yAge+ "A fun Fact about you is" +fFact);
+        System.out.println("Thank You " + name +" "+ "You are from "+ bCity + "You are "+ yAge + "A fun Fact about you is" + fFact);
 
 
 
