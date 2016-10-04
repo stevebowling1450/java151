@@ -5,8 +5,8 @@ package _006_Loops;
  */
 import java.util.Scanner;
 public class Loops {
-    public static void main(String args[]){
-   // For, For each, While, Do While
+    public static void main(String args[]) {
+        // For, For each, While, Do While
 //
 //        for (int i =1; i <= 6; i++){
 //            System.out.println(" Happy Day");
@@ -21,31 +21,41 @@ public class Loops {
 //            System.out.println( count);
 //            count++;
 //        }
-        Scanner num1 = new Scanner(System.in);
-        Scanner num2 = new Scanner(System.in);
-        Scanner func = new Scanner(System.in);
+        while (true) {
 
-       double number1;
-       double number2;
-        String function;
-        double total;
+            Scanner num1 = new Scanner(System.in);
+            Scanner num2 = new Scanner(System.in);
+            Scanner func = new Scanner(System.in);
 
-        System.out.println("First Num:");
-        number1 = num1.nextInt();
+            double number1;
+            double number2;
+            String function;
+            double total = 0;
 
-        System.out.println("First Num:");
-        number2 = num1.nextInt();
+            System.out.println("First Num:");
+            number1 = num1.nextInt();
 
-        System.out.println("function + - / * ");
-        function = func.next();
+            System.out.println("Second Num:");
+            number2 = num2.nextInt();
 
-        if (function.equals("*")){
-            total= number1 * number2;
+            System.out.println("function + - / * ");
+            function = func.next();
+
+            if (function.equals("*")) {
+                total = number1 * number2;
+            } else if (function.equals("/")) {
+                total = number2 / number1;
+            } else if (function.equals("-")) {
+                total = number2 - number1;
+            } else if (function.equals("+")) {
+                total = number2 + number1;
+            } else {
+                System.out.println(" Plesae input a function");
+            }
+
+            System.out.println(total);
 
 
-
-     System.out.println(total);
         }
-
     }
 }
