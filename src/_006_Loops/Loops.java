@@ -50,7 +50,7 @@ public class Loops {
             } else if (function.equals("+")) {
                 total = number2 + number1;
             } else {
-                System.out.println(" Plesae input a function");
+                System.out.println(" Please input a function");
             }
 
             System.out.println(total);
