@@ -26,6 +26,6 @@ public class Students extends SchoolEmployee {
     public double getGpa(){return gpa;}
 
 
-
-
+    public static void addGrade() {
+    }
 }
