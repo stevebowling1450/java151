@@ -39,7 +39,7 @@ public class Teacher extends SchoolEmployee {
         System.out.println("Enter more grades? y/n ");
         moreG=more.nextLine();
         if (moreG.equals("n")){
-            break;
+            //break;
         }
 
 
