@@ -3,32 +3,19 @@ package _010_Inheritance;
 /**
  * Created by stevebowling on 10/4/16.
  */
-public class Cashier {
-    public int payday;
-    public String name;
-    String departments;
+public class Cashier extends Employee {
 
-    public Cashier(String n, int s,  String d) {
-        name = n;
-        payday = s;
-        departments = d;
+    public Cashier(String n, int s, String p) {
+        super(n, s ,p);
+
     }
 
-    public String getName() {
-        return name;
-    }
+    public String displayInfo(){
+        String empInfo = super.displayInfo();
 
-    public int getPayday() {
-        return payday;
-    }
-
-    public String displayInfo() {
-        return " Name: " + name + "\n"
-                + " PayDay " + payday + "\n" +
-                " department :" + departments+ "\n";
+        return empInfo;
     }
 
 
 
-}
-
+    }
