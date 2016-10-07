@@ -35,7 +35,7 @@ public class SchoolEmployee {
             Teacher.addGrade(95);
         }
         else {
-            Students.addGrade();
+            Students.addGrade(95);
         }
 }
 
