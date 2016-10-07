@@ -2,6 +2,7 @@ package _012_SchoolPeople;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Created by stevebowling on 10/5/16.
@@ -34,7 +35,7 @@ public class Students extends SchoolEmployee {
     public double getGpa() {
         return gpa;
     }
-
+      static   int sum;
     static String moreG;
     static int tp;
     static int i;
@@ -53,10 +54,11 @@ public class Students extends SchoolEmployee {
             moreG = more.nextLine();
 
             if (moreG.equals("n")) {
-                System.out.println("The grades you have entered: ");
+                System.out.println("The grades you have entered ");
                 for (int i = 0; i < gradeBook.size(); i++) {
-                    System.out.println("A score of : " + gradeBook.get(i) + "\n");
+                    sum = sum + gradeBook.get(i) / gradeBook.size();
                 }
+                System.out.println(" avg a score of : " + sum );
                 break;
             }
         }
