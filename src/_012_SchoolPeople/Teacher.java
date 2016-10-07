@@ -23,31 +23,35 @@ public class Teacher extends SchoolEmployee {
         return "Teacher: " + "\n" + empInfo + " Years of employment : " + years + "\n"
                 + " Grade Taught: " + grade;
     }
-
+           static int tp;
            static int i;
             int ag;
            static String moreG;
 
+
     public static void addGrade(int ag) {
-        Scanner tp=new Scanner(System.in);
-        System.out.println("Please enter a Grade:");
-        ag=tp.nextInt();
+        ArrayList<Integer> gradeBook = new ArrayList<>();
+        while (true) {
+            Scanner tp = new Scanner(System.in);
+            System.out.println("Please enter a Grade:");
+            ag = tp.nextInt();
+            gradeBook.add(ag);
 
-        ArrayList<Integer>gradeBook = new ArrayList<>();
+            Scanner more = new Scanner(System.in);
+            System.out.println("Enter more grades? y/n ");
+            moreG = more.nextLine();
 
-        Scanner more=new Scanner(System.in);
-        System.out.println("Enter more grades? y/n ");
-        moreG=more.nextLine();
-        if (moreG.equals("n")){
-            //break;
+            if (moreG.equals("n")) {
+                System.out.println("The grades you have entered: ");
+                for (int i=0; i < gradeBook.size(); i++){
+                System.out.println("A score of : "+ gradeBook.get(i) + "\n");}
+                break;
+
+            }
+
+
+
         }
-
-
-
-        gradeBook.add(ag);
-        System.out.println("The grade you entered: ");
-        for (int i=0; i < gradeBook.size(); i++);
-        System.out.println(gradeBook.get(i) + "\n");
 
 
             }
