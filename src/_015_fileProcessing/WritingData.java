@@ -27,7 +27,7 @@ public class WritingData {
         outFile.println(79);
         outFile.println(80);
         outFile.println(81);
-        outFile.println(82);
+        outFile.println("hello");
         outFile.close();
 
 
